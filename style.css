@@ -1,0 +1,100 @@
+/* header */
+header{
+    display: flex;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+header img{
+    width: 128px;
+    border: 2px solid black;
+    margin: 5px;
+}
+header nav{
+    right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 2em;
+}
+
+nav ul li a::after{
+    content: "  |";
+}
+
+.lastMenu::after{
+    content: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+
+/* main */
+main{
+    display: flex;
+}
+
+.principale{
+    flex: 2;
+    margin-left: 20px;
+}
+
+.ariane ul{
+    padding: 0;
+}
+
+.ariane li{
+    display: inline;
+    font-size: 1.5em;
+}
+
+.ariane a{
+    text-decoration: none;
+}
+
+h1+img{
+    width: 100%;
+}
+
+h2+img{
+    width: 64px;
+    float: left;
+    border: 2px solid black;
+}
+
+p{
+padding: 20px;
+}
+
+aside{
+    flex: 1;
+    height: 100vh;
+}
+aside h2{
+    border: 2px solid black;
+    margin: 0;
+}
+
+.navBar{
+    border: 2px solid black;
+    height: 50vh;
+}
+
+/* footer */
+footer{
+    display: flex;
+    border: 2px solid black;
+}
+
+footer p{
+    flex: 4;
+    font-size: 1.5em;
+}
+
+footer div{
+    flex: 1;
+    align-self: flex-end;
+}
