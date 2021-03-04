@@ -47,6 +47,38 @@ main{
     margin-left: 20px;
 }
 
+.bouton{
+    margin: 1em;
+    padding: 1em 2em;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                          rgba(0, 0, 0, .2),
+                                          rgba(0, 0, 0, .2) 30%,
+                                          rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    outline-style: none;
+}
+    
+.bouton:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+    
+.bouton:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+
 .ariane ul{
     padding: 0;
 }
@@ -60,15 +92,41 @@ main{
     text-decoration: none;
 }
 
-h1+img{
+.photo{
+    mix-blend-mode: difference;
     width: 100%;
 }
+
 
 .vignette{
     width: 64px;
     float: left;
     border: 2px solid black;
     margin-right: 20px;
+}
+
+.grey{
+    position: absolute;
+    width: 78em;
+    height: 10em
+}
+
+.heart{
+    position: absolute;
+    width: 92px;
+    top: 74em;
+    left: 77em;
+    display: none;
+}
+
+.containerFav:hover .grey{
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1;
+}
+
+.containerFav:hover .heart{
+    display: block;
+    z-index: 2;
 }
 
 aside{
